@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback Form</title>
+    <script type="module" defer src="form.js"></script>
+    <link rel="stylesheet" href2="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="title">Feedback</div>
+
+      <form
+        id="form"
+        action="https://docs.google.com/forms/d/e/1FAIpQLSc6dAaOEWFGF0rMoJdA3MXK0XeEwHzqYNNIt7hJEK5rSryxjQ/formResponse"
+        method="POST"
+        target="_self"
+      >
+        <div class="field">
+          <input id="email" name="entry.2110548662" type="text" />
+          <span class="error" id="emailError"></span>
+          <label for="email">Email Address</label>
+        </div>
+
+        <div class="field">
+          <input
+            name="entry.1307080555"
+            id="dob"
+            type="text"
+            placeholder="DD/MM/YYY"
+          />
+          <span class="error" id="dobError"></span>
+          <label for="dob">Date of Birth</label>
+        </div>
+
+        <div class="field">
+          <textarea
+            name="entry.1947148278"
+            id="message" 
+          ></textarea>
+          <span class="error" id="messageError"></span>
+          <label for="message">Send a feedback</label>
+        </div> 
+
+        <div class="field">
+          <input id="submit" type="submit" value="Send" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

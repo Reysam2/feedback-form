@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+font-size: 62.5%;
+}
+
+html,
+body {
+  display: grid;
+  height: 100%;
+  place-items: center;
+  background: #73958d;
+  font-size: 1.6em;
+}
+
+.wrapper {
+  width: 380px;
+  background-color: #eee4f0;
+  border-radius: 15px;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  color: #fff;
+  font-size: 45px;
+  text-align: center;
+  line-height: 100px;
+  background: linear-gradient(-13deg, #c850c0, #4158d0);
+  border-radius: 15px 15px 0px 0px;
+  font-weight: 600;
+}
+
+form { 
+  padding: 10px 30px 50px 30px;
+}
+
+form .field {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin-top: 50px;
+}
+
+input,
+textarea {
+  height: 100%;
+  width: 100%;
+  padding-left: 20px;
+  border-radius: 25px;
+  border: 1px solid lightgray;
+  outline: none;
+  font-size: 15px;
+}
+
+input:focus,
+input:valid ~ label,
+textarea:focus,
+textarea:valid ~ label {
+  border-color: #4158d0;
+}
+
+.field label {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition: all 0.3s ease;
+  font-size: 17px;
+  color: #999;
+}
+
+input:focus ~ label,
+input:valid ~ label,
+textarea:focus ~ label,
+textarea:valid ~ label {
+  top: 0%;
+  transform: translateY(-50%);
+  color: #4158de;
+  font-size: 16px;
+  background: #fff;
+}
+
+#dob {
+  padding: 0 20px 0 120px;
+}
+
+
+textarea {
+  padding-top: 12px;
+  resize: none;
+}
+
+input[type="submit"] {
+  color: #fff;
+  background: linear-gradient(-13deg, #c850c0, #4158d0);
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  padding-left: 0px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+input[type="submit"]:active {
+  transform: scale(0.95);
+}
+
+
+ 
+#dobError,
+#emailError,
+#messageError {
+  position: absolute;
+  font-size: 0.6rem;
+  left:-0.35rem;
+  top:2.3rem;
+  width:15rem;
+  height:5rem; 
+  color:red;
+}
+
+ 
+
