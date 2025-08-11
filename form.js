@@ -1,7 +1,9 @@
-// import isValid from skypack
+  // import isValid from skypack
 import {
   isValid
 } from 'https://cdn.skypack.dev/date-fns';
+
+document.addEventListener('DOMContentLoaded', () => {
 
 //elements
 const emailInput = document.querySelector('#email');
@@ -174,3 +176,6 @@ form.addEventListener('submit', (e) => {
 emailInput.addEventListener('input', emailLogic);
 dobInput.addEventListener('input', dobLogic);
 messageInput.addEventListener('input', messageLogic);
+
+
+})
